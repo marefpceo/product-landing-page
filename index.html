@@ -7,6 +7,96 @@
   <title>Product Landing Page</title>
 </head>
 <body>
+  <header id='header'>
+    <div class='logo'>
+      <img src='./images/grass-logo.png' alt='Grass Logo' id='header-img' width='100'>
+      <h1>A Cut Above Lawn Care</h1>
+    </div>
+
+    <nav id='navbar'>
+      <a href='#services' class='nav-link'>Services</a>
+      <a href='#process' class='nav-link'>Our Process</a>
+      <a href='#pricing' class='nav-link'>Pricing</a>
+    </nav>
+  </header>
+
+  <section id='sign-up'>
+    <h2>Top notch lawn care, affordably priced!!</h2>
+    <form action='https://www.freecodecamp.com/email-submit' method='post' id='form'>
+      <label for='email'><input type='email' name='email' id='email' placeholder='Enter your email address'/></label>
+      <input type='submit' id='submit' value='Sign Up Today'>
+    </form>
+  </section>
+
+  <section id='services'>
+    <div class='service-type'>
+      <img src='' alt='' class='service-img'>
+      <div class='service-text'>
+        <h2>Mowing</h2>
+        <p>Blurb about mowing</p>
+      </div>
+    </div>
+
+    <div class='service-type'>
+      <img src='' alt='' class='service-img'>
+      <div class='service-text'>
+        <h2>Fertilization</h2>
+        <p>Blurb about fertilization</p>
+      </div>
+    </div>
+
+    <div class='service-type'>
+      <img src='' alt='' class='service-img'>
+      <div class='service-text'>
+        <h2>Weed Control</h2>
+        <p>Blurb about weed control</p>
+      </div>
+    </div>
+
+    <div class='service-type'>
+      <img src='' alt='' class='service-img'>
+      <div class='service-text'>
+        <h2>Trimming</h2>
+        <p>Blurb about tree, hedge, flower</p>
+      </div>
+    </div>
+  </section>
+
+  <section id='process'>
+    <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/EanUrZhceVU?controls=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id='pricing'>
+    <div class='card'>
+      <div class='card-head'>
+        <h3>Plan 1</h3>
+        <div class='card-body'>
+          <span class='price'><p>&dollar;</p></span>
+        </div>
+      </div>
+      <button class='select-btn'>Select</button>
+    </div>
+
+    <div class='card'>
+      <div class='card-head'>
+        <h3>Plan 2</h3>
+        <div class='card-body'>
+          <span class='price'><p>&dollar;</p></span>
+        </div>
+      </div>
+      <button class='select-btn'>Select</button>
+    </div>
+
+    <div class='card'>
+      <div class='card-head'>
+        <h3>Plan 3</h3>
+        <div class='card-body'>
+          <span class='price'><p>&dollar;</p><span>
+        </div>
+      </div>
+      <button class='select-btn'>Select</button>
+    </div>
+  </section>
   
 </body>
 </html>
