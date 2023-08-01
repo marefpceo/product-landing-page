@@ -6,6 +6,7 @@ body {
   margin: 0;
   width: 100%;
   font-size: 16px;
+  background-color: #f1ffef;
 }
 
 main {
@@ -14,14 +15,44 @@ main {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+  
+}
+
+section {
+  margin: 30px auto;
 }
 
 h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 5px;
+}
+
+#submit, 
+.select-btn {
+  border: none;
+  background-color: #17632d;
+  color: #f1ffef;
+  font-size: 1.1rem;
+  border-radius: 2px;
+  border: 1px solid #008000;
+}
+
+#submit:hover,
+.select-btn:hover {
+  box-shadow: 0 0 2px 1px #008000;
+  cursor: pointer;
+}
+
 #header {
-  background-color: rgb(241, 255, 239);
+  background-color: #f1ffef;
   position: sticky;
   top: 0;
   left: 0;
@@ -39,30 +70,48 @@ h1 {
 
 #navbar {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin: 10px auto;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 #navbar a {
   font-size: 1.2rem;
   color: black;
   text-decoration: none;
-  margin: 10px auto;
+  text-align: center;
   padding: 5px 15px;
-  border: 1px solid black;
+  width: 100%;
+}
+
+#navbar a:hover {
+  color: white;
+  background-color: #17632d;
 }
 
 #sign-up {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 #form {
   display: inherit;
   flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 30px;
+}
+
+#submit {
+  width: 130px;
+  height: 30px;
 }
 
 .service-type {
@@ -81,12 +130,45 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 25px 0;
   gap: 10%;
 } 
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1ffef;
   margin: 15px;
-  padding: 5px 10px;
-  border: 1px solid black;
+  border: 1px solid #008000;
+  border-radius: 2px;
+  width: 250px;
+}
+
+.card-head {
+  flex: none;
+  color: #f1ffef;
+  background-color: #17632d;
+  text-align: center;
+  width: 100%;
+}
+
+.card-body ul li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.price {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price p {
+  margin: 10px 0;
+}
+
+.select-btn {
+  width: 75px;
+  height: 30px;
+  margin: 0 0 10px;
 }
