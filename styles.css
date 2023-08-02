@@ -24,6 +24,7 @@ section {
 
 h1 {
   font-size: 2rem;
+  margin: 0;
 }
 
 h2 {
@@ -33,6 +34,15 @@ h2 {
 h3 {
   margin: 0;
   padding: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #17632d;
+  color: #f1ffef;
+  padding: 15px 0;
 }
 
 #submit, 
@@ -61,14 +71,14 @@ h3 {
 .logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 
 #header-img {
   width: 60px;
 }
 
-#navbar {
+#nav-bar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -76,16 +86,17 @@ h3 {
   padding-bottom: 10px;
 }
 
-#navbar a {
+#nav-bar a {
   font-size: 1.2rem;
   color: #000000;
   text-decoration: none;
   text-align: center;
   padding: 5px 15px;
   width: 100%;
+  border-radius: 2px;
 }
 
-#navbar a:hover {
+#nav-bar a:hover {
   color: #f1ffef;
   background-color: #17632d;
 }
@@ -137,6 +148,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: #f1ffef;
   margin: 15px;
   border: 1px solid #17632d;
@@ -165,16 +177,20 @@ h3 {
   font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
-}
-
-.price p {
   margin: 10px 0;
 }
 
 .select-btn {
   width: 75px;
   height: 30px;
-  margin: 0 0 10px;
+  margin: 0 0 10px 0;
+}
+
+#footer-nav a {
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #f1ffef;
 }
 
 @media only screen and (min-width: 769px) {
@@ -184,13 +200,13 @@ h3 {
     padding: 0 30px;
   }
 
-  #navbar {
+  #nav-bar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  #navbar a {
+  #nav-bar a {
     width: 150px;
   }
 
